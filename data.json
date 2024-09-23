@@ -1,6 +1,16 @@
 [
   {
     "id": "1",
-    "name": "Item 1"
+    "name": "Nikitha Mbokotwana ",
+    "Item Ordered": "Skirt",
+    "Quantity": "12",
+    "Size": "small"
+  },
+  {
+    "id": "12",
+    "name": "Sonwabiso Maloni ",
+    "Item Ordered": "Jeans",
+    "Quantity": "20",
+    "Size": "small"
   }
 ]
