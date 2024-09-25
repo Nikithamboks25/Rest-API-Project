@@ -4,13 +4,23 @@
     "name": "Nikitha Mbokotwana ",
     "Item Ordered": "Skirt",
     "Quantity": "12",
-    "Size": "small"
+    "Size": "small",
+    "Price": "R100 each"
   },
   {
-    "id": "12",
-    "name": "Sonwabiso Maloni ",
-    "Item Ordered": "Jeans",
-    "Quantity": "20",
-    "Size": "small"
+    "id": "11",
+    "name": "Robyn Paulsen",
+    "Item Ordered": "Sponge Bob t-shirt",
+    "Quantity": "4",
+    "Size": "medium all",
+    "Price": "R55"
+  },
+  {
+    "id": "45",
+    "name": "Monica Ndlovu",
+    "Item Ordered": "slipper shoes",
+    "Quantity": "3 items",
+    "Size": "All size 3",
+    "Price": "R55 each"
   }
 ]

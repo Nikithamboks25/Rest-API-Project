@@ -91,7 +91,7 @@ const server = http.createServer((req, res) => {
                     case "DELETE" :
                         if(urlParts[1] === "items" && id){
                             //remove an item
-                            items = items.filter(items => item.id !== id);
+                            items = items.filter(item => item.id !== id);
                             writeData(items); //write uodated item to file
                             res.writeHead(204); //No content
                             res.end();
