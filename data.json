@@ -22,5 +22,13 @@
     "Quantity": "3 items",
     "Size": "All size 3",
     "Price": "R55 each"
+  },
+  {
+    "id": "46",
+    "name": "Sisipho",
+    "Item Ordered": "slipper shoes",
+    "Quantity": "3 items",
+    "Size": "All size 3",
+    "Price": "R55 each"
   }
 ]
