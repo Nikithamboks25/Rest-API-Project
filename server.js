@@ -1,7 +1,6 @@
 const http = require("http"); //for built-in http module
 const fs = require("fs"); //for file systems operation
 const path = require("path"); //for handling file paths
-const express = require("express"); //packages
 
 const DATA_FILE = path.join(__dirname, "data.json");
 
@@ -30,10 +29,22 @@ const server = http.createServer((req, res) => {
     //Handling Get Method Request
     switch(req.method){
         case "GET":
-            if(urlParts[1] === "items"){
-                //retrieving item lists
-                res.writeHead(200, {"Content-Type" : "application/json"});
-                res.end(JSON.stringify(items));
+            if (urlParts[1] === "items") {
+                if (id) {
+                    // Retrieve a specific item by id
+                    const item = items.find(item => item.id === id);
+                    if (item) {
+                        res.writeHead(200, {"Content-Type": "application/json"});
+                        res.end(JSON.stringify(item)); // Return the found item
+                    } else {
+                        res.writeHead(404);
+                        res.end("Item Not Found"); // Return 404 if item not found
+                    }
+                } else {
+                    // If no id is provided, return the list of items
+                    res.writeHead(200, {"Content-Type": "application/json"});
+                    res.end(JSON.stringify(items)); // Return all items
+                }
             } else {
                 res.writeHead(404);
                 res.end("Not Found");
